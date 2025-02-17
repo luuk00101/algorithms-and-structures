@@ -24,9 +24,6 @@ def generate_number_without_repetition(n: int, k: int) -> None:
     n (int): Number length
     k: (int): Digit upper bound
 
-    Returns:
-    list[int]: Current iteration number
-
     Raises:
     ValueError: If n > k - cannot generate any
     ValueError: If n or k are negative
