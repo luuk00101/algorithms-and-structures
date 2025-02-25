@@ -82,7 +82,7 @@ def find_min() -> None:
         values: List[List[int]] = [[0] * excercise_count for _ in range(MEMBER_COUNT)]
 
         # Fill the DP table
-        for row in range(3):  # Team members 0, 1, 2
+        for row in range(MEMBER_COUNT):  # Team members 0, 1, 2
             for column in range(excercise_count - (2 - row)):
                 # Skip invalid configurations (each member must solve at least one task)
                 if column < row:
